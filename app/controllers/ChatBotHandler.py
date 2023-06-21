@@ -16,7 +16,7 @@ def createEmbedding():
 
     response = supabase.table("documents").insert({
         content: query,
-        embedding
+        embedding: embedding    
     })
 
     return jsonify({"status": "true", "content": "Success Insert Embedding To Supabase"})
