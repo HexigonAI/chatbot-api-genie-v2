@@ -6,7 +6,7 @@ import openai
 import pymysql
 import numpy as np
 import ast
-openai.api_key = "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"
+openai.api_key = ""
 
 def connect():
     return pymysql.connect(host="localhost", user="root", password="", database="embeddings", charset='utf8mb4')
